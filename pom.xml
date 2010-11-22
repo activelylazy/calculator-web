@@ -77,7 +77,7 @@
 						<configuration>
 							<systemPropertyVariables>
 								<test.server.port>9080</test.server.port>
-								<test.xvfb.display>:2</test.xvfb.display>
+								<test.xvfb.display>${test.xvfb.display}</test.xvfb.display>
 							</systemPropertyVariables>
 						</configuration>
 						<executions>
@@ -139,6 +139,9 @@
 
 		<profile>
 			<id>with-headless-firefox</id>
+			<properties>
+				<test.xvfb.display>:2</test.xvfb.display>
+			</properties>
 			<build>
 				<plugins>
 					<plugin>
