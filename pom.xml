@@ -68,6 +68,7 @@
 						<configuration>
 							<systemPropertyVariables>
 								<test.server.port>9080</test.server.port>
+								<test.xvfb.display>:2</test.xvfb.display>
 							</systemPropertyVariables>
 						</configuration>
 						<executions>
