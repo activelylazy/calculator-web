@@ -1,0 +1,8 @@
+/coverage
+/target
+/work
+/coverage.ec
+/coverage.xml
+/.project
+/.classpath
+/.tomcatplugin
